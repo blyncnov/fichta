@@ -16,6 +16,10 @@ margin: 1em 0;
 border-radius: 4px;
  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 
+@media (max-width: 768px) {
+       padding: 2em .5em;
+}
+
 
 .explore{
     display: flex;
@@ -60,6 +64,7 @@ grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 @media (max-width: 768px) {
 grid-template-rows: repeat(2, 1fr);
 grid-template-columns: repeat(2, 1fr);
+gap: 1em;
 }
 `
 
