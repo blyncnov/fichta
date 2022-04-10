@@ -33,15 +33,14 @@ ul{
     align-items: center;
     gap: 1em;
     font-weight: 500;
-     color: black;
-     opacity: 0.8;
-     font-family: "Roboto", sans-serif;
-     font-family: 'Comfortaa', cursive;
+    color: black;
+    opacity: 0.8;
+    font-family: "Roboto", sans-serif;
 
 
-         @media (max-width: 768px) {
+
+    @media (max-width: 768px) {
        margin: .5em 0;
-    
     }
 }
 
