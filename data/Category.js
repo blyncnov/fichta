@@ -30,7 +30,7 @@ export const CategorData = [
          amoutLeft: 23,
     },
        {
-        id: 5,
+        id: 6,
         name: "Cereals",
         image: "https://res.cloudinary.com/blyncnov/image/upload/v1649602401/fichta/6_zlhr3j.svg",
          amoutLeft: 4,

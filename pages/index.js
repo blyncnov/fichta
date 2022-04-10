@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Categories from '../components/Categories/Index'
 import Advert from '../components/Advert'
+import Product from '../components/Products/Index'
 
 
 export default function Home() {
@@ -15,7 +16,8 @@ export default function Home() {
       </Head>
       <Header />
       <Categories />
-      <Advert/>
+      <Advert />
+      <Product/>
     </>
   )
 }
