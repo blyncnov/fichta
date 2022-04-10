@@ -45,6 +45,7 @@ ul{
 
     @media (max-width: 768px) {
        margin: .5em 0;
+           font-size: 12px;
     }
 }
 

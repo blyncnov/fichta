@@ -14,7 +14,7 @@ const Category = () => {
   return (
     <>
       <div className="explore">
-        <HeadingOne>Explore Category</HeadingOne>
+        <HeadingOne size="2rem" sizeM="1.5rem">Explore Category</HeadingOne>
         <ul>
           <li>Vegetables</li>
           <li>Fruits</li>
