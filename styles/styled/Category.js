@@ -64,7 +64,7 @@ scroll-snap-type: x mandatory;
 `
 
 export const Card = styled.div`
-width: 500px;
+width: 100%;
 position: relative;
 background-color: #FEEFEA;
 border-radius: 4px;
@@ -81,7 +81,7 @@ text-align: center;
    }
 
 .feature-img{
-    width: 100%;
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,6 +98,7 @@ font-family: 'Comfortaa', cursive;
 `
 
 export const Button = styled.button`
+width: 100%;
 padding: 1em 2em;
 border: none;
 border-radius: 3px;
