@@ -36,6 +36,8 @@ ul{
      color: black;
      opacity: 0.8;
      font-family: "Roboto", sans-serif;
+     font-family: 'Comfortaa', cursive;
+
 
          @media (max-width: 768px) {
        margin: .5em 0;
@@ -75,13 +77,14 @@ border-radius: 4px;
 padding: 1em 0;
 color: black;
 font-weight: bold;
-transition: all 0.3s ease-in-out;
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, all 0.3s ease-in-out;
 cursor: pointer;
 text-align: center;
 
    &:hover{
          background-color: #FFFCEB;
          transform: scale(1.05);
+          box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
    }
 
 .feature-img{
@@ -96,6 +99,7 @@ h6{
     font-size: .8rem;
     color: #8D8D8D;
     font-weight: 500;
+font-family: 'Comfortaa', cursive;
 
 }
 `

@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const HeadingOne  = styled.h1`
 font-size: ${({size}) => size ? size : "2.5rem"};
 color: ${({ color }) => color ? color : "#0069CD"};
+font-family: 'Comfortaa', cursive;
+
 
 @media (max-width: 768px) {
   font-size: ${({sizeM}) => sizeM ? sizeM : "2rem"};
