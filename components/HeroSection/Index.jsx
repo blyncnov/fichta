@@ -25,7 +25,7 @@ const HeroSection = () => {
                         <GridContainer>
                             <Divider>
                                 <HeadingOne>
-                                    Meet Shop , Your New Shopping Assistant
+                                    Meet Shop , Your New Shopping Assistant .
                                 </HeadingOne>
                                 <br />
                                 <Title>
