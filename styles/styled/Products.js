@@ -4,7 +4,7 @@ import styled from "styled-components"
 export const CategoryContainer = styled.div`
 width: 100%;
 position: relative;
-// padding: 2em 0;
+padding: 2em 0;
 // box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 `
 
@@ -69,7 +69,6 @@ width: 100%;
 display: grid;
 align-items: center;
 justify-content: space-between;
-align-items: center;
 grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 
 @media (max-width: 768px) {
@@ -83,23 +82,29 @@ export const Card = styled.div`
 width: 100%;
 position: relative;
 display: grid;
-align-items: s;
+align-items: center;
 justify-content: space-between;
 grid-template-rows: repeat(1, 1fr);
 grid-template-columns: repeat(1, 1fr);
-background-color: #FEEFEA;
+background-color: #fff;
 border-radius: 4px;
-// padding: 1em 0;
+box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 color: black;
 font-weight: bold;
 transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, all 0.3s ease-in-out;
 cursor: pointer;
-text-align: center;
+text-align: start;
+
 
    &:hover{
-         background-color: #FFFCEB;
+         background-color: #FEEFEA;
          transform: scale(1.05);
           box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
+
+   }
+
+   .sp{
+       padding: 0 .6em;
    }
 
 .feature-img{
@@ -138,7 +143,7 @@ width: 100%;
 height: auto;
 padding: 1em ;
 border: none;
-border-radius: 3px;
+border-radius: 0 0 3px 3px;
 background-color: #0168CD;
 color: #ffffff;
 font-size: 1rem;

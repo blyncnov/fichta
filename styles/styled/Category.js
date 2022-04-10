@@ -81,7 +81,7 @@ text-align: center;
    }
 
 .feature-img{
-    width: 150px;
+    width: 160px;
     display: flex;
     justify-content: center;
     align-items: center;
