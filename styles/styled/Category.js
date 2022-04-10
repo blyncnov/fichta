@@ -56,30 +56,18 @@ ul{
 export const CardContainer = styled.div`
 gap: 2em;
 width: 100%;
-display: grid;
-align-items: center;
-justify-content: space-between;
-align-items: center;
-grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+display: flex;
+overflow: scroll;
+scroll-snap-type: x mandatory;
 
-@media (max-width: 768px) {
-grid-template-rows: repeat(2, 1fr);
-grid-template-columns: repeat(2, 1fr);
-gap: 1em;
-}
+
 `
 
 export const Card = styled.div`
-width: 100%;
+width: 500px;
 position: relative;
-display: grid;
-align-items: center;
-justify-content: space-between;
-grid-template-rows: repeat(1, 1fr);
-grid-template-columns: repeat(1, 1fr);
 background-color: #FEEFEA;
 border-radius: 4px;
-// padding: 1em 0;
 color: black;
 font-weight: bold;
 transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, all 0.3s ease-in-out;
@@ -110,8 +98,6 @@ font-family: 'Comfortaa', cursive;
 `
 
 export const Button = styled.button`
-width: auto;
-height: auto;
 padding: 1em 2em;
 border: none;
 border-radius: 3px;

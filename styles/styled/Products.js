@@ -4,6 +4,7 @@ import styled from "styled-components"
 export const CategoryContainer = styled.div`
 width: 100%;
 position: relative;
+// padding: 2em 0;
 // box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 `
 
@@ -82,7 +83,7 @@ export const Card = styled.div`
 width: 100%;
 position: relative;
 display: grid;
-align-items: center;
+align-items: s;
 justify-content: space-between;
 grid-template-rows: repeat(1, 1fr);
 grid-template-columns: repeat(1, 1fr);
