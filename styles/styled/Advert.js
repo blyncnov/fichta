@@ -8,7 +8,7 @@ box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 `
 
 export const Container = styled.div`
-background-color: #0171DC ;
+background-color: #C3016D ;
 width: 100%;
 position: relative;
 padding: 1em;

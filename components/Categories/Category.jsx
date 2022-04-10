@@ -5,10 +5,10 @@ import CategorData from "../../data/Category"
 
 import {
   CardContainer,
-  Card,
+  Card, Button
 } from "../../styles/styled/Category"
 
-import { Description, Button, HeadingOne } from "../../styles/Fichta_CSS"
+import { Description, HeadingOne } from "../../styles/Fichta_CSS"
 
 const Category = () => {
   return (
@@ -34,6 +34,8 @@ const Category = () => {
               <Description>{category.name}</Description>
               <br />
               <h6>{` ${category.amoutLeft} items`}</h6>
+              <br />
+              <Button><h5>View Category</h5></Button>
             </Card>
           )
         })}
