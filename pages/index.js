@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 import Header from '../components/Header'
 import Categories from '../components/Categories/Index'
+import Advert from '../components/Advert'
 
 
 export default function Home() {
@@ -13,7 +14,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Categories/>
+      <Categories />
+      <Advert/>
     </>
   )
 }
