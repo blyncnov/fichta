@@ -24,6 +24,7 @@ border-radius: 4px;
 
     @media (max-width: 768px) {
         flex-direction: column;
+            align-items: flex-start;
     }
 
 ul{
@@ -32,11 +33,13 @@ ul{
     align-items: center;
     gap: 1em;
     font-weight: 500;
-     color: #8D8D8D;
+     color: black;
+     opacity: 0.8;
      font-family: "Roboto", sans-serif;
 
          @media (max-width: 768px) {
-       margin: 1em 0;
+       margin: .5em 0;
+    
     }
 }
 
@@ -72,7 +75,14 @@ border-radius: 4px;
 padding: 1em 0;
 color: black;
 font-weight: bold;
-   text-align: center;
+transition: all 0.3s ease-in-out;
+cursor: pointer;
+text-align: center;
+
+   &:hover{
+         background-color: #FFFCEB;
+         transform: scale(1.05);
+   }
 
 .feature-img{
     width: 100%;
@@ -85,6 +95,8 @@ font-weight: bold;
 h6{
     font-size: .8rem;
     color: #8D8D8D;
+    font-weight: 500;
+
 }
 `
 

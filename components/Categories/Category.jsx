@@ -21,7 +21,6 @@ const Category = () => {
       <div className="explore">
         <HeadingOne>Explore Category</HeadingOne>
         <ul>
-          <li>All</li>
           <li>Vegetables</li>
           <li>Fruits</li>
           <li>Meat</li>
