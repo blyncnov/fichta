@@ -12,7 +12,7 @@ font-family: 'Comfortaa', cursive;
 `
 
 export const Paragraph = styled.p`
-line-height: 25px;
+line-height: 22px;
 font-size: ${({size}) => size ? size : "14px"};
 color: ${({ color }) => color ? color : "black"};
 
