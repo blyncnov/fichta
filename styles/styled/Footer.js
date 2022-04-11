@@ -3,9 +3,8 @@ import styled from "styled-components"
 
 export const FooterContainer = styled.div`
 width: auto;
-background-color: #0A192F;
+background-color: black;
 position: relative;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 color: #fff;
 padding: 1em 0;
 `

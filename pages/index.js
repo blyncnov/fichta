@@ -1,9 +1,9 @@
 import Head from 'next/head'
 
-import Header from '../components/Header'
-import Categories from '../components/Categories'
+import Header from '../components/Header/index'
+import Categories from '../components/Categories/index'
 import Advert from '../components/Advert'
-import Product from '../components/Products/Index'
+import Product from '../components/Products/index'
 import Offer from '../components/Offers'
 import Newsletter from '../components/Newsletter'
 
