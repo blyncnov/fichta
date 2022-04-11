@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Components for Header
-import HeroSection from '../HeroSection/Index'
+import HeroSection from '../HeroSection'
 
 // styles for Header
 import { Container } from '../../styles/Fichta_CSS'

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 import Header from '../components/Header'
-import Categories from '../components/Categories/Index'
+import Categories from '../components/Categories'
 import Advert from '../components/Advert'
 import Product from '../components/Products/Index'
 import Offer from '../components/Offers'

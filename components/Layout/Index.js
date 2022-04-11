@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Navigation from '../../components/Navigation/Index'
+import Navigation from '../Navigation'
 import Footer from './Footer'
 
 const Index = ({children}) => {
