@@ -30,7 +30,7 @@ const Navigation = () => {
                     <NavigationFlexContainer >
                         <LogoContainer>
                             <Link href="/" passHref={true} >
-                                <a style={{ color: "#000000" }}>
+                                <a style={{ color: "#000000", fontWeight: "600" }}>
                                     <h1>{TextLogo}</h1>
                                 </a>
                             </Link>
@@ -58,11 +58,9 @@ const Navigation = () => {
                             <div className="cart__lists" >
                                 <Link href="/cart">
                                     <a><HiOutlineShoppingCart style={{ cursor: "pointer", color: "black", fontWeight: "bold", fontSize: "1.5rem" }} /></a>
-                                </Link>
-                                <Link href="/cart">
-                                    <a style={{ cursor: "pointer", color: "#000000" }}>Cart</a>
-                                </Link>
 
+                                </Link>
+                                <li>Cart</li>
                                 <div className="cart__count">
                                     1
                                 </div>
