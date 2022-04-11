@@ -29,7 +29,9 @@ const Navigation = () => {
                 <Constraints >
                     <NavigationFlexContainer >
                         <LogoContainer>
-                            <h1>{TextLogo}</h1>
+                            <Link href="/" passHref={true}>
+                                <h1>{TextLogo}</h1>
+                            </Link>
                             {/* <Image src={Logo} alt="Logo" layout="responsive" /> */}
                         </LogoContainer>
                         <Search mobile>
