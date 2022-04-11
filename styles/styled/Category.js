@@ -102,13 +102,18 @@ export const Button = styled.button`
 width: 100%;
 padding: 1em 2em;
 border: none;
-border-radius: 3px;
+  border-radius: 20% 20% 0 0;
 background-color: #0168CD;
 color: #ffffff;
 font-size: 1rem;
 font-weight: bold;
 cursor: pointer;
+transition: all 0.5s linear;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+&:hover{
+   border-radius: 50% 0 0;
+}
 `
 
 

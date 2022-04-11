@@ -96,7 +96,6 @@ cursor: pointer;
 text-align: start;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 
-
    &:hover{
        background-color: #FFFCEB;
          transform: scale(1.05);
