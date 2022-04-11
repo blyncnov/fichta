@@ -39,7 +39,9 @@ const HeroSection = () => {
                                 <br />
 
                                 <Link style={{ color: "white" }} passHref={true} href="/shop">
-                                    <Button>Shop Now</Button>
+                                    <a>
+                                        <Button>Shop Now</Button>
+                                    </a>
                                 </Link>
 
                             </Divider>

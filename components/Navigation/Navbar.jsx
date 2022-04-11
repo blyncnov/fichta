@@ -29,8 +29,10 @@ const Navigation = () => {
                 <Constraints >
                     <NavigationFlexContainer >
                         <LogoContainer>
-                            <Link href="/" passHref={true}>
-                                <h1>{TextLogo}</h1>
+                            <Link href="/" passHref={true} >
+                                <a style={{ color: "#000000" }}>
+                                    <h1>{TextLogo}</h1>
+                                </a>
                             </Link>
                             {/* <Image src={Logo} alt="Logo" layout="responsive" /> */}
                         </LogoContainer>
@@ -54,11 +56,11 @@ const Navigation = () => {
                             </div>
 
                             <div className="cart__lists" >
-                                <Link href="/cart" passHref={true}>
-                                    <HiOutlineShoppingCart style={{ cursor: "pointer", color: "black", fontWeight: "bold", fontSize: "1.5rem" }} />
+                                <Link href="/cart">
+                                    <a><HiOutlineShoppingCart style={{ cursor: "pointer", color: "black", fontWeight: "bold", fontSize: "1.5rem" }} /></a>
                                 </Link>
-                                <Link href="/cart" passHref={true}>
-                                    <li>Cart</li>
+                                <Link href="/cart">
+                                    <a style={{ cursor: "pointer", color: "#000000" }}>Cart</a>
                                 </Link>
 
                                 <div className="cart__count">
