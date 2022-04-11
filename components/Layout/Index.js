@@ -1,8 +1,15 @@
 import React from 'react'
 
-const Index = () => {
+import Navigation from '../../components/Navigation/Index'
+import Footer from './Footer'
+
+const Index = ({children}) => {
   return (
-    <div>Index</div>
+    <>
+      <Navigation />
+        {children}
+      <Footer/>
+    </>
   )
 }
 

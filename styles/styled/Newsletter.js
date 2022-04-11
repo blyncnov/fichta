@@ -23,13 +23,18 @@ text-align: center;
 box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 
 .newsInput{
-    width: 100%;
+    width: 50%;
     margin: 1em 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: .5em;
     align-items: center;
+
+@media (max-width: 768px) {
+        width: 100%;
+}
+
 }
 
 input{
