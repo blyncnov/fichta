@@ -27,7 +27,7 @@ const Footer = () => {
             <br />
             {Category.map((category) => {
               return (
-                <Link passHref={true} href={category.name} key={category.id}>
+                <Link passHref={true} href={`/${category.name}`} key={category.id}>
                   <p style={{ margin: ".5em", cursor: "pointer" }} > {category.name}</p>
                 </Link>
               )

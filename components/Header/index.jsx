@@ -13,7 +13,6 @@ const Header = () => {
             <Container bg="#F6F3FC">
                     <HeroSection />    
             </Container>
-
         </>
     )
 }

@@ -39,7 +39,7 @@ const HeroSection = () => {
                                 <Button>Shop Now</Button>
                             </Divider>
                             <Divider>
-                                <Image src={Banner} alt="banner" layout="responsive" />
+                                <Image priority src={Banner} alt="banner" layout="responsive" />
                             </Divider>
                         </GridContainer>
                     </Container>
