@@ -60,7 +60,13 @@ const Navigation = () => {
                                     <a><HiOutlineShoppingCart style={{ cursor: "pointer", color: "black", fontWeight: "bold", fontSize: "1.5rem" }} /></a>
 
                                 </Link>
-                                <li>Cart</li>
+                                <Link href="/cart">
+                                    <a style={{ color: "#000000", fontWeight: "600" }}>
+                                        <li>Cart</li>
+                                    </a>
+
+                                </Link>
+
                                 <div className="cart__count">
                                     1
                                 </div>
