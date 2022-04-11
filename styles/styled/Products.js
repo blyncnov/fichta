@@ -94,13 +94,14 @@ font-weight: bold;
 transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, all 0.3s ease-in-out;
 cursor: pointer;
 text-align: start;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 
 
    &:hover{
-         background-color: #FEEFEA;
+       background-color: #FFFCEB;
          transform: scale(1.05);
-          box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
-
+        box-shadow: 0 1px 5px 1px rgb(0 0 0 / 10%);
+        border-radius: 2px 2px 0  0;
    }
 
    .sp{
