@@ -1,14 +1,14 @@
 import React from 'react'
 
-import Navigation from '../Navigation/index'
+import Navigation from './Navigation'
 import Footer from './Footer'
 
-const Index = ({children}) => {
+const Index = ({ children }) => {
   return (
     <>
       <Navigation />
-        {children}
-      <Footer/>
+      {children}
+      <Footer />
     </>
   )
 }
