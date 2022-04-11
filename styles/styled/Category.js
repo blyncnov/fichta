@@ -4,7 +4,7 @@ import styled from "styled-components"
 export const CategoryContainer = styled.div`
 width: 100%;
 position: relative;
-// box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
+//   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 `
 
 export const Container = styled.div`
@@ -14,7 +14,7 @@ position: relative;
 padding: 2em 1em;
 margin: 1em 0;
 border-radius: 4px;
- box-shadow: 0 1px 5px 1px rgb(0 0 0 / 10%);
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 
 @media (max-width: 768px) {
        padding: 2em .5em;
