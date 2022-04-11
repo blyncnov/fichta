@@ -12,13 +12,13 @@ import {
 
 import {
     Constraints, HeadingOne, Paragraph,
-    Title,
+    Title, Typography, Description,
 } from "../../styles/Fichta_CSS"
 
 
 const HeroSection = () => {
     return (
-        <>
+        <div>
             <HeroSectionContainer>
                 <Constraints>
                     <Container>
@@ -45,7 +45,7 @@ const HeroSection = () => {
                     </Container>
                 </Constraints>
             </HeroSectionContainer>
-        </>
+        </div>
     )
 }
 

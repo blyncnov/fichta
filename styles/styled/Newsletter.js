@@ -10,7 +10,7 @@ export const Container = styled.div`
 background-color: #fff ;
 width: 100%;
 position: relative;
-padding: 1em;
+padding: 2em;
 color: white;
 margin: 1em 0;
 border-radius: 2px;
@@ -23,22 +23,16 @@ text-align: center;
 box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 
 .newsInput{
-    width: 50%;
     margin: 1em 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: .5em;
     align-items: center;
-
-@media (max-width: 768px) {
-        width: 100%;
-}
-
 }
 
 input{
-    width: 100%;
+    width: 200%;
    padding: 1em ;
     border: none;
     border-radius: 4px;
@@ -47,6 +41,10 @@ input{
    font-size: .9rem;
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
+
+    @media (max-width: 350px) {
+        width: 100%;
+    }
 
     &:focus{
         outline: none;
