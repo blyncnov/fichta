@@ -1,13 +1,14 @@
 import '../styles/globals.css'
 
-import Layout from "../components/Layout/Layout"
+import Navigation from "../components/Navigation"
+import Footer from "../components/Footer.jsx"
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Layout>
+      <Navigation/>
         <Component {...pageProps} />
-        </Layout>
+        <Footer/>
     </>
   )
 }

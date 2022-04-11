@@ -20,6 +20,12 @@ import { Constraints } from "../../styles/Fichta_CSS"
 
 
 const Navigation = () => {
+    const [openCart, setOpenCart] = React.useState(false)
+
+    const OpenStateHandler = () => {
+        setOpenCart(!openCart);
+        console.log("Cart is opened!");
+    }
 
     return (
         <>
@@ -49,7 +55,7 @@ const Navigation = () => {
                                 <li>Wishlist</li>
                             </div>
 
-                            <div className="cart__lists">
+                            <div className="cart__lists" onClick={OpenStateHandler}>
                                 <HiOutlineShoppingCart style={{ cursor: "pointer", color: "black", fontWeight: "bold", fontSize: "1.5rem" }} />
                                 <li>Cart</li>
                                 <div className="cart__count">
