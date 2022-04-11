@@ -1,15 +1,17 @@
 import '../styles/globals.css'
 
-import Navigation from "../components/Navigation/Navbar"
-import Footer from "../components/Footer.jsx"
+// import Navigation from "../components/Navigation/Navbar"
+// import Footer from "../components/Layout/Footer.jsx"
+
+import Layout from "../components/Layout/Layout"
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
-      <Navigation/>
+    <Layout>
+      {/* <Navigation/> */}
         <Component {...pageProps} />
-        <Footer/>
-    </>
+        {/* <Footer/> */}
+    </Layout>
   )
 }
 

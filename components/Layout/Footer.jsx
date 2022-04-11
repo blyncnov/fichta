@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 
-import Category from "../data/Category"
+import Category from "../../data/Category"
 
-import { FooterContainer, FooterGridContainer, FooterGridCard } from "../styles/styled/Footer"
-import { Constraints, Description, Paragraph, Typography, Title } from "../styles/Fichta_CSS"
+import { FooterContainer, FooterGridContainer, FooterGridCard } from "../../styles/styled/Footer"
+import { Constraints, Description, Paragraph, Typography, Title } from "../../styles/Fichta_CSS"
 
 
 const Footer = () => {
