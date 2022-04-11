@@ -1,4 +1,5 @@
 import React from 'react'
+import { useRouter } from "next/router"
 
 import { HiOutlineShoppingCart } from "react-icons/hi"
 import { AiOutlineUserAdd } from "react-icons/ai"
@@ -20,10 +21,10 @@ import { Constraints } from "../../styles/Fichta_CSS"
 
 
 const Navigation = () => {
-    const [openCart, setOpenCart] = React.useState(false)
+    const router = useRouter();
 
     const OpenStateHandler = () => {
-        setOpenCart(!openCart);
+        router.push("/cart")
         console.log("Cart is opened!");
     }
 

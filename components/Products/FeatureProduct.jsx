@@ -15,12 +15,12 @@ const Product = () => {
         <>
             <CategoryContainer>
                 <Constraints>
-                    {/* <SectionTitle>
+                    <SectionTitle>
                         <HeadingOne size="2rem" sizeM="1.5rem">Featured Products</HeadingOne>
                         <ul>
                             <li>See More ...</li>
                         </ul>
-                    </SectionTitle> */}
+                    </SectionTitle>
                     <CardContainer>
                         {DummyProduct.map((product) => {
                             return (

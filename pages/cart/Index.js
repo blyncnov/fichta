@@ -1,9 +1,12 @@
 import React from 'react'
 
+
+import CartComponent from '../../components/Cart/CartComponent'
+
 const Cart = () => {
   return (
       <>
-          <h1>Cart</h1>
+        <CartComponent/>
       </>
   )
 }

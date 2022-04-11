@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Header from '../components/Header'
 import Categories from '../components/Categories/Index'
 import Advert from '../components/Advert'
-import Product from '../components/Products/Index'
+import FeatureProduct from '../components/Products/FeatureProduct'
 import Offer from '../components/Offers'
 import Newsletter from '../components/Newsletter'
 
@@ -19,7 +19,7 @@ export default function Home() {
       <Header />
       <Categories />
       <Advert />
-      <Product />
+      <FeatureProduct />
       <Offer />
       <Newsletter/>
     </>

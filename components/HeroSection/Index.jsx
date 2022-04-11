@@ -14,6 +14,7 @@ import {
     Constraints, HeadingOne, Paragraph,
     Title, Typography, Description,
 } from "../../styles/Fichta_CSS"
+import Link from 'next/link'
 
 
 const HeroSection = () => {
@@ -36,7 +37,11 @@ const HeroSection = () => {
                                     Stock up on the latest fashion trends and get the latest deals on your favorite brands. Shop at your favorite stores and get the latest deals on your favorite brands.
                                 </Paragraph>
                                 <br />
-                                <Button>Shop Now</Button>
+
+                                <Link style={{ color: "white" }} passHref={true} href="/shop">
+                                    <Button>Shop Now</Button>
+                                </Link>
+
                             </Divider>
                             <Divider>
                                 <Image priority src={Banner} alt="banner" layout="responsive" />
