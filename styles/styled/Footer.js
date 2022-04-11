@@ -16,6 +16,7 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 justify-items: space-between;
 align-items: start;
+gap: 2em;
 `
 
 export const FooterGridCard = styled.div`
