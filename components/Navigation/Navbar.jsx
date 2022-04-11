@@ -1,5 +1,5 @@
 import React from 'react'
-import { useRouter } from "next/router"
+import Link from 'next/link'
 
 import { HiOutlineShoppingCart } from "react-icons/hi"
 import { AiOutlineUserAdd } from "react-icons/ai"
@@ -20,13 +20,8 @@ import {
 import { Constraints } from "../../styles/Fichta_CSS"
 
 
-const Navigation = () => {
-    const router = useRouter();
 
-    const OpenStateHandler = () => {
-        router.push("/cart")
-        console.log("Cart is opened!");
-    }
+const Navigation = () => {
 
     return (
         <>
@@ -56,9 +51,14 @@ const Navigation = () => {
                                 <li>Wishlist</li>
                             </div>
 
-                            <div className="cart__lists" onClick={OpenStateHandler}>
-                                <HiOutlineShoppingCart style={{ cursor: "pointer", color: "black", fontWeight: "bold", fontSize: "1.5rem" }} />
-                                <li>Cart</li>
+                            <div className="cart__lists" >
+                                <Link href="/cart" passHref={true}>
+                                    <HiOutlineShoppingCart style={{ cursor: "pointer", color: "black", fontWeight: "bold", fontSize: "1.5rem" }} />
+                                </Link>
+                                <Link href="/cart" passHref={true}>
+                                    <li>Cart</li>
+                                </Link>
+
                                 <div className="cart__count">
                                     1
                                 </div>
