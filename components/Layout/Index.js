@@ -1,9 +1,16 @@
 import React from 'react'
 
-const Index = () => {
+import Navigation from "../Navigation"
+import Footer from './Footer'
+
+const LayoutComponent = ({ children }) => {
   return (
-    <div>Index</div>
+    <>
+      <Navigation />
+      {children}
+      <Footer />
+    </>
   )
 }
 
-export default Index
+export default LayoutComponent

@@ -23,7 +23,7 @@ const Newsletter = () => {
                         <div className="newsInput">
                             <input type="text" placeholder="blyncnov@fichta.com" />
                             <button type="submit">Subscribe</button>
-                       </div>
+                        </div>
                     </Container>
                 </Constraints>
             </NewsletterContainer>

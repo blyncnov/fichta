@@ -1,12 +1,12 @@
 import React from 'react'
 import Product from './Product'
 
-const Index = () => {
+const Products = () => {
   return (
     <>I
-      <Product/>
+      <Product />
     </>
   )
 }
 
-export default Index
+export default Products

@@ -1,6 +1,4 @@
-import React, { useState, useEffect } from 'react'
-// import Link from 'next/link'
-// import Image from 'next/image'
+import React from 'react'
 
 import { HiOutlineShoppingCart } from "react-icons/hi"
 import { AiOutlineUserAdd } from "react-icons/ai"
@@ -8,7 +6,6 @@ import { GoSearch } from 'react-icons/go'
 import { RiFileList3Line } from 'react-icons/ri'
 
 //Import Navigation data
-// import Logo from "../../public/logo/fichta.svg"
 import { TextLogo } from "../../data/Navigation"
 
 // Styles for Navigation

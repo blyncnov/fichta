@@ -6,7 +6,7 @@ import Category from './Category'
 import { Container, CategoryContainer } from "../../styles/styled/Category"
 import { Constraints } from "../../styles/Fichta_CSS"
 
-const Index = () => {
+const Categories = () => {
   return (
     <>
       <CategoryContainer>
@@ -20,4 +20,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default Categories

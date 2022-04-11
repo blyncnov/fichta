@@ -16,6 +16,11 @@ grid-template-columns: 1fr 1fr 1fr;
 justify-items: space-between;
 align-items: start;
 gap: 2em;
+
+@media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 0;
+}
 `
 
 export const FooterGridCard = styled.div`

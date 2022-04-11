@@ -8,7 +8,7 @@ import Offer from '../components/Offers'
 import Newsletter from '../components/Newsletter'
 
 
-export default function Home() {
+export default function Home() {  
   return (
     <>
       <Head>
