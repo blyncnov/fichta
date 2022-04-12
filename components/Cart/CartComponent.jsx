@@ -1,8 +1,6 @@
 import React from 'react'
 import Image from "next/image"
 
-import p1 from "../../public/logo/shirt.jpg"
-
 import { useSelector } from "react-redux"
 
 import {
@@ -26,7 +24,9 @@ const CartComponent = () => {
 
           <CartGrid>
             <CartGridCard>
-              <Typography>Cart (2) </Typography>
+              <Typography>
+                {` Cart (${CartItems.length})`}
+              </Typography>
               <br />
             </CartGridCard>
           </CartGrid>
@@ -42,7 +42,7 @@ const CartComponent = () => {
                     <CartInfomation>
                       <CartImageText>
                         <div className="img">
-                          <Image src={p1} alt="Image" width="100" height="100" />
+                          <Image src={cart.image} alt="Image" width="100" height="100" />
                         </div>
                         <div className="text">
                           <Typography>{cart.name}</Typography>
@@ -55,7 +55,7 @@ const CartComponent = () => {
                         <Typography color="#C5006F">{`${cart.price}.00`}</Typography>
                         <div className="control">
                           <button >-</button>
-                          <h4>2</h4>
+                          <h4>1</h4>
                           <button >+</button>
                         </div>
                       </CartPricing>

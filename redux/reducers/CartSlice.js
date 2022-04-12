@@ -17,6 +17,7 @@ export const CartSlice = createSlice({
                     console.log(product.name + " " + "Added To Cart Via Reducer"),
                     state.cart.push({
                         id: Math.random(),
+                        image: product.image,
                         name: product.name,
                         price: product.price,
                         description: product.desc

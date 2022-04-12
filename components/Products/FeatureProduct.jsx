@@ -3,6 +3,9 @@ import Image from "next/image"
 
 import DummyProduct from "../../data/dummyProduct"
 
+import { useDispatch, useSelector } from "react-redux"
+import { AddToCart } from "../../redux/reducers/CartSlice"
+
 import {
     CardContainer, SectionTitle,
     Card, Buy, CategoryContainer
@@ -11,6 +14,7 @@ import {
 import { Description, HeadingOne, Constraints } from "../../styles/Fichta_CSS"
 
 const Product = () => {
+    const dispatch = useDispatch()
     return (
         <>
             <CategoryContainer>
@@ -36,7 +40,7 @@ const Product = () => {
                                     <br />
                                     <Buy>
                                         <h5>{`$${product.price}`}</h5>
-                                        <><h5>Buy Now</h5></>
+                                        <h5 onClick={() => dispatch(AddToCart(product.id))}>Buy Now</h5>
                                     </Buy>
                                 </Card>
                             )

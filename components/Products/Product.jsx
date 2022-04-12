@@ -16,7 +16,6 @@ import { Description, Constraints } from "../../styles/Fichta_CSS"
 const Product = () => {
 
     const dispatch = useDispatch()
-    const CartItems = useSelector((state) => state.Cart.cart)
 
     return (
         <>
