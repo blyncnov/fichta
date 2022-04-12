@@ -24,7 +24,6 @@ import { Constraints } from "../../styles/Fichta_CSS"
 
 const Navigation = () => {
     const CartItems = useSelector((state) => state.Cart.cart)
-
     return (
         <>
             <NavigationContainer>
@@ -80,10 +79,29 @@ const Navigation = () => {
                     <AdditionNavigationWrapper>
                         <Constraints>
                             <div className="lists">
-                                <li>Sell on Fichta</li> <span>|</span>
-                                <li>Logistics</li> <span>|</span>
-                                <li>Customer Service</li> <span>|</span>
-                                <li>Today&apos;s  Deals</li>
+                                <Link href="/shop" passHref={true} >
+                                    <a style={{ color: "#000000", fontWeight: "600" }}>
+                                        <li>Fichta Products <span>|</span></li>
+                                    </a>
+                                </Link>
+
+                                <Link href="/" passHref={true} >
+                                    <a style={{ color: "#000000", fontWeight: "600" }}>
+                                        <li>Customer Service  <span> |</span></li>
+                                    </a>
+                                </Link>
+
+                                <Link href="/" passHref={true} >
+                                    <a style={{ color: "#000000", fontWeight: "600" }}>
+                                        <li>Logistics  <span> |</span></li>
+                                    </a>
+                                </Link>
+
+                                <Link href="/" passHref={true} >
+                                    <a style={{ color: "#000000", fontWeight: "600" }}>
+                                        <li>Today&apos;s  Deals </li>
+                                    </a>
+                                </Link>
 
                             </div>
                         </Constraints>

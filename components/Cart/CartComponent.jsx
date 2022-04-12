@@ -36,7 +36,7 @@ const CartComponent = () => {
               <div key={cart.id}>
                 <CartGrid>
                   <CartGridCard>
-                    <br />
+
                     <hr />
                     <br />
                     <CartInfomation>
