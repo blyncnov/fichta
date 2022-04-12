@@ -29,11 +29,11 @@ box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
     justify-content: center;
     gap: .5em;
     align-items: center;
-        width: 50%;
+    width: 50%;
 }
 
 input{
-    width: 200%;
+    width: 100%;
    padding: 1em ;
     border: none;
     border-radius: 4px;

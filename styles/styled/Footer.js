@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 export const FooterContainer = styled.div`
 width: auto;
-background-color: black;
+background-color: #0B192E;
 position: relative;
 color: #fff;
 padding: 1em 0;
@@ -12,7 +12,7 @@ padding: 1em 0;
 export const FooterGridContainer = styled.div`
 width: 100%;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 2fr 1fr 1fr;
 justify-items: space-between;
 align-items: start;
 gap: 2em;

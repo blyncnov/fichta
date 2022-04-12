@@ -64,11 +64,10 @@ const Navigation = () => {
                                     <a style={{ color: "#000000", fontWeight: "600" }}>
                                         <li>Cart</li>
                                     </a>
-
                                 </Link>
 
                                 <div className="cart__count">
-                                    1
+                                    2
                                 </div>
                             </div>
 
