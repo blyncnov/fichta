@@ -3,7 +3,7 @@ import dummyProduct from "../../data/dummyProduct"
 
 const initialState = {
     cart: [],
-    count: 0
+    Quantity: 1,
 }
 
 export const CartSlice = createSlice({
@@ -20,10 +20,34 @@ export const CartSlice = createSlice({
                         image: product.image,
                         name: product.name,
                         price: product.price,
-                        description: product.desc
-                              
+                        description: product.desc,
+                        itemQuantity: 1
                     })
                 );
+            } else {
+                return "No item in cart"
+            }
+        })
+        },
+        IncreaseProductQuantity: (state, action) => {
+            state.cart.filter(product => {
+                if (product.id === action.payload) {
+                    return (
+                        console.log(product.name + " " + "has been increased to" + " " + product.itemQuantity++),
+                        product.price = product.price * product.price
+                )
+            } else {
+                return "No item in cart"
+            }
+        })
+        },
+         DecreaseProductQuantity: (state, action) => {
+            state.cart.filter(product => {
+                if (product.id === action.payload) {
+                    return (
+                        console.log(product.name + " " + "has been increased to" + " " + product.itemQuantity--),
+                        product.price = product.price - product.price
+                )
             } else {
                 return "No item in cart"
             }
@@ -33,6 +57,6 @@ export const CartSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { AddToCart} = CartSlice.actions
+export const { AddToCart, IncreaseProductQuantity, DecreaseProductQuantity} = CartSlice.actions
 
 export default CartSlice.reducer
