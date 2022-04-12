@@ -92,7 +92,6 @@ box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 color: black;
 font-weight: bold;
 transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, all 0.3s ease-in-out;
-cursor: pointer;
 text-align: start;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 
@@ -154,6 +153,10 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 
 display: flex;
 justify-content: space-between;
 align-items: center;
+
+h5{
+    cursor: pointer;
+}
 `
 
 

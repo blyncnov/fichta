@@ -19,7 +19,7 @@ const Newsletter = () => {
                 <Constraints>
                     <Container>
                         <HeadingOne color="white" size="2rem" sizeM="1.5rem">Subscribe To Newsletter</HeadingOne>
-                        <Typography>And get $20 coupon for free shopping</Typography>
+                        <Typography color="white" size="12px">And get $20 coupon for free shopping</Typography>
                         <div className="newsInput">
                             <input type="text" placeholder="blyncnov@fichta.com" />
                             <button type="submit">Subscribe</button>

@@ -3,24 +3,25 @@ import Image from "next/image"
 
 import DummyProduct from "../../data/dummyProduct"
 
+import { useDispatch, useSelector } from "react-redux"
+import { AddToCart } from "../../redux/reducers/CartSlice"
+
 import {
-    CardContainer, SectionTitle,
+    CardContainer,
     Card, Buy, CategoryContainer
 } from "../../styles/styled/Products"
 
-import { Description, HeadingOne, Constraints } from "../../styles/Fichta_CSS"
+import { Description, Constraints } from "../../styles/Fichta_CSS"
 
 const Product = () => {
+
+    const dispatch = useDispatch()
+    const CartItems = useSelector((state) => state.Cart.cart)
+
     return (
         <>
             <CategoryContainer>
                 <Constraints>
-                    {/* <SectionTitle>
-                        <HeadingOne size="2rem" sizeM="1.5rem">Featured Products</HeadingOne>
-                        <ul>
-                            <li>See More ...</li>
-                        </ul>
-                    </SectionTitle> */}
                     <CardContainer>
                         {DummyProduct.map((product) => {
                             return (
@@ -36,7 +37,7 @@ const Product = () => {
                                     <br />
                                     <Buy>
                                         <h5>{`$${product.price}`}</h5>
-                                        <><h5>Buy Now</h5></>
+                                        <h5 onClick={() => dispatch(AddToCart(product.id))}> Cart</h5>
                                     </Buy>
                                 </Card>
                             )

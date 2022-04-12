@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
+import { useSelector } from "react-redux"
+
 import { HiOutlineShoppingCart } from "react-icons/hi"
 import { AiOutlineUserAdd } from "react-icons/ai"
 import { GoSearch } from 'react-icons/go'
@@ -22,6 +24,7 @@ import { Constraints } from "../../styles/Fichta_CSS"
 
 
 const Navigation = () => {
+    const CartItems = useSelector((state) => state.Cart.cart)
 
     return (
         <>
@@ -67,7 +70,7 @@ const Navigation = () => {
                                 </Link>
 
                                 <div className="cart__count">
-                                    2
+                                    {CartItems.length}
                                 </div>
                             </div>
 
