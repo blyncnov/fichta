@@ -30,6 +30,11 @@ padding: 1em 0;
 h1{
     color: #0566CD;
 }
+
+li{
+    font-family: monospace;
+}
+
 `
 
 

@@ -74,8 +74,7 @@ justify-content: space-between;
 gap: 2em;
 
 @media (max-width: 768px) {
-grid-template-rows: 1fr;
-grid-template-columns: 1fr;
+grid-template-columns: 1fr 1fr;
 }
 `
 

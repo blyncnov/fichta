@@ -9,20 +9,27 @@ import {
   CartPricing,
 } from "../../styles/Cart/CartMenu"
 
-import { Constraints, Typography } from "../../styles/Fichta_CSS"
+import { Constraints, Typography, Paragraph } from "../../styles/Fichta_CSS"
 
 const CartComponent = () => {
-  const [itemCount, setItemCount] = React.useState(0);
+  const [itemCount, setItemCount] = React.useState(1);
+  const [singlePrice, setSinglePrice] = React.useState(1);
 
   const IncreaseCountHandler = (count) => {
-    setItemCount(itemCount++)
+    // setItemCount(itemCount++)
+    setItemCount(itemCount => itemCount + 1)
+    setSinglePrice(prevSinglePrice => prevSinglePrice * itemCount)
   }
 
   const DecreaseCountHandler = () => {
-    if (itemCount < 1) {
-      return itemCount = 0;
+    if (itemCount === 1) {
+      return itemCount = singlePrice;
+    } else if (itemCount > 0) {
+      // setItemCount(itemCount--)
+      setItemCount(itemCount => itemCount - 1)
+      setSinglePrice(singlePrice - singlePrice)
     } else {
-      setItemCount(itemCount--)
+      return itemCount = 0;
     }
   }
 
@@ -43,14 +50,14 @@ const CartComponent = () => {
                     <Image src={p1} alt="Image" width="100" height="100" />
                   </div>
                   <div className="text">
-                    <Typography>Playstation</Typography>
+                    <Typography>Summer Shirt For Men</Typography>
                     <br />
-                    <p>TSES Rechargeable Standing Fan- HF-B22U Seller</p>
+                    <Paragraph sizeM="12px" size="13px" style={{ fontSize: "12px", fontweight: "400" }}>TSES Rechargeable Standing Fan- HF-B22U Seller</Paragraph>
                   </div>
                 </CartImageText>
 
                 <CartPricing>
-                  <Typography>$23.00</Typography>
+                  <Typography color="#C5006F">{`$${singlePrice}.00`}</Typography>
                   <div className="control">
                     <button onClick={DecreaseCountHandler}>-</button>
                     <h4>{itemCount}</h4>

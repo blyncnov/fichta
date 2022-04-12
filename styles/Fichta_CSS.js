@@ -27,6 +27,7 @@ font-size: 1.5rem;
 
 export const Typography = styled.h4`
 font-size: 1.2rem;
+color: ${({ color }) => color ? color : "black"};
 `
 
 export const Description = styled.p`
