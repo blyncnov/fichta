@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Category from "../../data/Category"
 
 import { FooterContainer, FooterGridContainer, FooterGridCard } from "../../styles/styled/Footer"
-import { Constraints, Description, Paragraph, Typography, Title } from "../../styles/Fichta_CSS"
+import { Constraints, Description, Paragraph, Typography, Title, HeadingOne } from "../../styles/Fichta_CSS"
 
 
 const Footer = () => {
@@ -15,7 +15,7 @@ const Footer = () => {
 
           <FooterGridCard>
 
-            <h1>Fichta</h1>
+            <HeadingOne size="2rem" sizeM="1.5rem">Fichta</HeadingOne>
             <br />
             <Description>  Best E-commerce ipsum dolor sit amet, consectetur adipisicing elit.
               Modi cumque tenetur inventore veniam, hic vel ipsa
@@ -23,7 +23,7 @@ const Footer = () => {
           </FooterGridCard>
 
           <FooterGridCard>
-            <h1>Categories</h1>
+            <HeadingOne size="2rem" sizeM="1.5rem">Categories</HeadingOne>
             <br />
             {Category.map((category) => {
               return (
@@ -36,7 +36,7 @@ const Footer = () => {
 
 
           <FooterGridCard>
-            <h1>Contact Us</h1>
+            <HeadingOne size="2rem" sizeM="1.5rem">Contact Us</HeadingOne>
             <br />
             <Paragraph color="#fff">183 Agbede St. Funaab gate, Funaab, Alabata</Paragraph>
             <br />
