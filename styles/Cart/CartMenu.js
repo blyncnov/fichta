@@ -5,6 +5,8 @@ width: 100%;
  padding: 2em 1em;
  margin: 1em 0;
  display: grid;
+  box-shadow: 0 1px 5px 1px rgb(0 0 0 / 10%);
+
 grid-template-columns: 2fr 1fr;
 gap: 1em;
 
@@ -16,8 +18,6 @@ grid-template-columns: 1fr;
 
 export const CartContainer = styled.div`
 width: 100%;
- box-shadow: 0 1px 5px 1px rgb(0 0 0 / 10%);
- padding: 2em 1em;
 `
 
 export const CartGrid = styled.div`
@@ -53,14 +53,13 @@ grid-template-columns: 1fr;
 export const CartImageText = styled.div`
 width: 100%;
 display: grid;
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 2fr;
 align-items: center;
 justify-content: space-between;
 gap: 2em;
 
 @media (max-width: 768px) {
-grid-template-rows: 1fr;
-grid-template-columns: 1fr;
+grid-template-columns: 1fr 2fr;
 }
 
 `
@@ -74,7 +73,7 @@ justify-content: space-between;
 gap: 2em;
 
 @media (max-width: 768px) {
-grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 2fr;
 }
 `
 

@@ -27,7 +27,7 @@ const CartComponent = () => {
               <Typography>
                 {` Cart (${CartItems.length})`}
               </Typography>
-              <br />
+              
             </CartGridCard>
           </CartGrid>
 
@@ -52,7 +52,7 @@ const CartComponent = () => {
                       </CartImageText>
 
                       <CartPricing>
-                        <Typography color="#C5006F">{`${cart.price}.00`}</Typography>
+                        <Typography color="#C5006F">{`$${cart.price}.00`}</Typography>
                         <div className="control">
                           <button >-</button>
                           <h4>1</h4>

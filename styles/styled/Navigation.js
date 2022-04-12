@@ -2,9 +2,24 @@ import styled from "styled-components"
 
 export const NavigationContainer = styled.div`
 width: 100%;
+height: 140px;
 position: relative;
+
+
+@media (max-width: 768px) {
+height: 70px;
+}
+`
+
+export const NavigationContainerSticky = styled.div`
 background-color: #F6F3FC;
-box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
+width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
 `
 
 export const NavigationFlexContainer = styled.div`

@@ -33,7 +33,7 @@ box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 }
 
 input{
-    width: 100%;
+    width: 200%;
    padding: 1em ;
     border: none;
     border-radius: 4px;
@@ -44,7 +44,7 @@ input{
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
 
     @media (max-width: 350px) {
-        width: 100%;
+        width: 200%;
     }
 
     &:focus{

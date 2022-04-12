@@ -21,9 +21,6 @@ const Product = () => {
                 <Constraints>
                     <SectionTitle>
                         <HeadingOne size="2rem" sizeM="1.5rem">Featured Products</HeadingOne>
-                        <ul>
-                            <li>See More ...</li>
-                        </ul>
                     </SectionTitle>
                     <CardContainer>
                         {DummyProduct.map((product) => {
@@ -40,7 +37,7 @@ const Product = () => {
                                     <br />
                                     <Buy>
                                         <h5>{`$${product.price}`}</h5>
-                                        <h5 onClick={() => dispatch(AddToCart(product.id))}>Buy Now</h5>
+                                        <h5 onClick={() => dispatch(AddToCart(product.id))}>Add To Cart</h5>
                                     </Buy>
                                 </Card>
                             )

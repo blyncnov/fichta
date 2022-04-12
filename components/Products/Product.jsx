@@ -36,7 +36,7 @@ const Product = () => {
                                     <br />
                                     <Buy>
                                         <h5>{`$${product.price}`}</h5>
-                                        <h5 onClick={() => dispatch(AddToCart(product.id))}> Cart</h5>
+                                        <h5 onClick={() => dispatch(AddToCart(product.id))}>Add To Cart</h5>
                                     </Buy>
                                 </Card>
                             )
