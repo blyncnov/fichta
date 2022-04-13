@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Image from "next/image"
 
 import { BsBagPlus } from "react-icons/bs"
@@ -15,6 +16,7 @@ import {
 
 import { Description, Constraints } from "../../styles/Fichta_CSS"
 
+
 const Product = () => {
 
     const dispatch = useDispatch()
@@ -28,10 +30,18 @@ const Product = () => {
                             return (
                                 <Card key={product.id}>
                                     <div className="feature-img">
-                                        <Image src={product.image} alt={product.name} width="100%" height="100%" />
+                                        <Link href={`/shop/${product.id}`}>
+                                            <a style={{ color: "black" , cursor: "pointer" }}>
+                                                <Image src={product.image} alt={product.name} width="100%" height="100%" />
+                                            </a>
+                                        </Link>
                                     </div>
                                     <div className="sp">
-                                        <Description>{product.name}</Description>
+                                        <Link href={`/shop/${product.id}`}>
+                                            <a style={{color: "black"}}>
+                                                <Description>{product.name}</Description>
+                                            </a>
+                                        </Link>
                                         <br />
                                         <h6>{` ${product.desc} items`}</h6>
                                     </div>
@@ -39,7 +49,7 @@ const Product = () => {
                                     <Buy>
                                         <h5>{`$${product.price}`}</h5>
                                         <div onClick={() => dispatch(AddToCart(product.id))}>
-                                            <BsBagPlus style={{fontSize: "1.2em"}} />
+                                            <BsBagPlus style={{ fontSize: "1.2em" }} />
                                         </div>
                                     </Buy>
                                 </Card>
