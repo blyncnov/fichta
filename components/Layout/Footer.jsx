@@ -23,7 +23,7 @@ const Footer = () => {
           </FooterGridCard>
 
           <FooterGridCard>
-            <HeadingOne size="2rem" sizeM="1.5rem">Categories</HeadingOne>
+            <HeadingOne size="1.5rem" sizeM="1.3rem">Categories</HeadingOne>
             <br />
             {Category.map((category) => {
               return (
@@ -36,7 +36,7 @@ const Footer = () => {
 
 
           <FooterGridCard>
-            <HeadingOne size="2rem" sizeM="1.5rem">Contact Us</HeadingOne>
+            <HeadingOne size="1.5rem" sizeM="1.3rem">Contact Us</HeadingOne>
             <br />
             <Paragraph color="#fff">183 Agbede St. Funaab gate, Funaab, Alabata</Paragraph>
             <br />
