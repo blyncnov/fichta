@@ -58,7 +58,7 @@ const CartComponent = () => {
                         <Typography color="#C5006F">{`$${cart.price}.00`}</Typography>
                         <div className="control">
                           <button onClick={() => dispatch(DecreaseProductQuantity(cart.id))}>-</button>
-                          <h4>{cart.itemQuantity}</h4>
+                          <h4>{Quantity}</h4>
                           <button onClick={() => dispatch(IncreaseProductQuantity(cart.id))}>+</button>
                         </div>
                       </CartPricing>

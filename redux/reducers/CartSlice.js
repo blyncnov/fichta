@@ -13,17 +13,19 @@ export const CartSlice = createSlice({
         AddToCart: (state, action) => {
          dummyProduct.filter(product => {
             if (product.id === action.payload) {
-                return (
-                    console.log(product.name + " " + "Added To Cart Via Reducer"),
-                    state.cart.push({
+                    if (state.cart.find(item => item.id === action.payload)) {
+                      alert("hey i exist")
+                    } else {
+                        alert(product.name + " " + "Added To Cart ")
+                        state.cart.push({
                         id: Math.random(),
                         image: product.image,
                         name: product.name,
                         price: product.price,
                         description: product.desc,
-                        itemQuantity: 1
+                        itemQuantity: state.Quantity
                     })
-                );
+                    }   
             } else {
                 return "No item in cart"
             }
@@ -33,8 +35,10 @@ export const CartSlice = createSlice({
             state.cart.filter(product => {
                 if (product.id === action.payload) {
                     return (
-                        console.log(product.name + " " + "has been increased to" + " " + product.itemQuantity++),
-                        product.price = product.price * product.price
+                        console.log(state.Quantity),
+                        state.Quantity++,
+                        console.log(state.Quantity + " " + "New price"),
+                        product.price = product.price 
                 )
             } else {
                 return "No item in cart"
@@ -45,8 +49,9 @@ export const CartSlice = createSlice({
             state.cart.filter(product => {
                 if (product.id === action.payload) {
                     return (
-                        console.log(product.name + " " + "has been increased to" + " " + product.itemQuantity--),
-                        product.price = product.price - product.price
+                        state.Quantity = state.Quantity - 1,
+                        console.log(state.Quantity),
+                        product.price = product.price - state.Quantity
                 )
             } else {
                 return "No item in cart"

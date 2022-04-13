@@ -1,9 +1,11 @@
 import React from 'react'
 import Image from "next/image"
 
+import { BsBagPlus } from "react-icons/bs"
+
 import DummyProduct from "../../data/dummyProduct"
 
-import { useDispatch, useSelector } from "react-redux"
+import { useDispatch } from "react-redux"
 import { AddToCart } from "../../redux/reducers/CartSlice"
 
 import {
@@ -36,7 +38,9 @@ const Product = () => {
                                     <br />
                                     <Buy>
                                         <h5>{`$${product.price}`}</h5>
-                                        <h5 onClick={() => dispatch(AddToCart(product.id))}>Add To Cart</h5>
+                                        <div onClick={() => dispatch(AddToCart(product.id))}>
+                                            <BsBagPlus style={{fontSize: "1.2em"}} />
+                                        </div>
                                     </Buy>
                                 </Card>
                             )
