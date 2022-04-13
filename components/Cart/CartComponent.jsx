@@ -8,7 +8,7 @@ import {
   CartContainer, CartGrid,
   CartGridCard, Splitter,
   CartInfomation, CartImageText,
-  CartPricing,
+  CartPricing, Button, SummaryInformation,
 } from "../../styles/Cart/CartMenu"
 
 import { Constraints, Typography, Paragraph } from "../../styles/Fichta_CSS"
@@ -18,7 +18,7 @@ const CartComponent = () => {
 
   const CartItems = useSelector((state) => state.Cart.cart)
   const Quantity = useSelector((state) => state.Cart.Quantity)
-
+  // const TotalSingleprice = useSelector((state) => state.Cart.TotalSinglePrice)
 
   return (
     <Constraints>
@@ -76,6 +76,30 @@ const CartComponent = () => {
           <Typography>CART SUMMARY</Typography>
           <br />
           <hr />
+          <SummaryInformation>
+            <div className="pricebox">
+              <h4>Sub Total </h4>
+              <h4>$60.70</h4>
+            </div>
+            <div className="pricebox">
+              <h4>Shipping </h4>
+              <h4>FREE</h4>
+            </div>
+            <div className="pricebox">
+              <h4>Estimated Taxes </h4>
+              <h4>$9.11</h4>
+            </div>
+            <div className="pricebox">
+              <h4>Cart Total </h4>
+              <h4>$69.70</h4>
+            </div>
+            <br />
+            <div className="btnWrapper">
+              <Button>Proceed To Checkout</Button>
+              <p>Secure Checkout
+                shipping is always safe and secure. </p>
+            </div>
+          </SummaryInformation>
         </CartContainer>
       </Splitter>
     </Constraints>

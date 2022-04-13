@@ -135,4 +135,35 @@ cursor: pointer;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 `
 
+export const SummaryInformation = styled.div`
+width: 100%;
+padding: 1em 0;
+
+h4{
+    font-weight: 400;
+}
+
+.pricebox{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: .5em 0;
+}
+
+.btnWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+p{
+    margin: .5em 0;
+    font-size: 12px;
+    text-align: start;
+}
+
+}
+
+`
+
 export default CartContainer;

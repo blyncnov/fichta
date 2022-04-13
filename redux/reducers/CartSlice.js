@@ -14,11 +14,11 @@ export const CartSlice = createSlice({
          dummyProduct.filter(product => {
             if (product.id === action.payload) {
                     if (state.cart.find(item => item.id === action.payload)) {
-                      alert("hey i exist")
+                      alert("Hey!!" + " " + product.name + " " + "is already in the cart")
                     } else {
-                        alert(product.name + " " + "Added To Cart ")
+                        alert(product.name + " " + "has been added to the cart ")
                         state.cart.push({
-                        id: Math.random(),
+                        id: product.id,
                         image: product.image,
                         name: product.name,
                         price: product.price,
@@ -34,12 +34,7 @@ export const CartSlice = createSlice({
         IncreaseProductQuantity: (state, action) => {
             state.cart.filter(product => {
                 if (product.id === action.payload) {
-                    return (
-                        console.log(state.Quantity),
-                        state.Quantity++,
-                        console.log(state.Quantity + " " + "New price"),
-                        product.price = product.price 
-                )
+                    state.Quantity++
             } else {
                 return "No item in cart"
             }
