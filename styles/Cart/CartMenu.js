@@ -141,6 +141,9 @@ padding: 1em 0;
 
 h4{
     font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .pricebox{
@@ -148,6 +151,13 @@ h4{
     justify-content: space-between;
     align-content: center;
     padding: .5em 0;
+
+    h4{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
 }
 
 .btnWrapper{

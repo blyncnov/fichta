@@ -90,7 +90,7 @@ const CartComponent = () => {
           <SummaryInformation>
             <div className="pricebox">
               <h4>Sub Total </h4>
-              <h4>$60.70</h4>
+              <h4> <FaEthereum />0.070</h4>
             </div>
             <div className="pricebox">
               <h4>Shipping </h4>
@@ -98,11 +98,11 @@ const CartComponent = () => {
             </div>
             <div className="pricebox">
               <h4>Estimated Taxes </h4>
-              <h4>$9.11</h4>
+              <h4> <FaEthereum />0.011</h4>
             </div>
             <div className="pricebox">
               <h4>Cart Total </h4>
-              <h4>$69.70</h4>
+              <h4> <FaEthereum />0.890</h4>
             </div>
             <br />
             <div className="btnWrapper">
