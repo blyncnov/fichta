@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
+import { FaEthereum } from "react-icons/fa"
 import dummyProduct from "../../data/dummyProduct"
 
 import IamgeCover from "../../public/logo/shirt.jpg"
@@ -24,10 +25,10 @@ const { productid } = router.query
  console.log(productid);
 
   const SingleProduct = dummyProduct.filter((product) => {
-    if (product.id === parseInt(productid) ) {
-      return product;
+    if (product.id === 1) {
+      return  console.log("SinglePoduct");
     } else {
-      return "Item not Found";
+      return console.log("Item not Found");
   }
   })
 
@@ -49,10 +50,10 @@ const { productid } = router.query
               in the padded sleeve, your everyday</Paragraph>
             <br />
             <HeadingOne size="1.5rem" sizeM="1.2rem">
-              $63.46
+              <FaEthereum/> 0.046
             </HeadingOne>
             <br/>
-            <Button onClick={dispatch(AddToCart(91))}>Add to Cart</Button>
+            <Button onClick={dispatch(AddToCart())}>Add to Cart</Button>
           </SingleProductDivider>
         </SingleProductContainer>
         </Constraints>
