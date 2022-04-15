@@ -156,6 +156,9 @@ align-items: center;
 
 h5{
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .1em;
 }
 `
 
