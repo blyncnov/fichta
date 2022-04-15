@@ -28,6 +28,9 @@ font-size: 1.5rem;
 export const Typography = styled.h4`
 font-size: {({ size }) => size ? size : "1.2rem"};
 color: ${({ color }) => color ? color : "black"};
+display: flex;
+align-items: center;
+gap: .1em;
 `
 
 export const Description = styled.p`

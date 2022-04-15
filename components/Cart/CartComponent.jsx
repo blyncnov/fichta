@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from "next/image"
 
+import { FaEthereum } from "react-icons/fa"
+
 import { useDispatch, useSelector } from "react-redux"
 import { IncreaseProductQuantity, DecreaseProductQuantity } from "../../redux/reducers/CartSlice"
 
@@ -61,7 +63,7 @@ const CartComponent = () => {
                               </CartImageText>
 
                               <CartPricing>
-                                <Typography color="#C5006F">{`$${cart.price}.00`}</Typography>
+                                <Typography color="#C5006F"><FaEthereum />{`${cart.price}.00`}</Typography>
                                 <div className="control">
                                   <button onClick={() => dispatch(DecreaseProductQuantity(cart.id))}>-</button>
                                   <h4>{Quantity}</h4>

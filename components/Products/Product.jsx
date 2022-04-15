@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from "next/image"
 
+import { FaEthereum } from "react-icons/fa"
 import { BsBagPlus } from "react-icons/bs"
 
 import DummyProduct from "../../data/dummyProduct"
@@ -47,7 +48,7 @@ const Product = () => {
                                     </div>
                                     <br />
                                     <Buy>
-                                        <h5>{`$${product.price}`}</h5>
+                                        <h5><FaEthereum />{` ${product.price}`}</h5>
                                         <div onClick={() => dispatch(AddToCart(product.id))}>
                                             <BsBagPlus style={{ fontSize: "1.2em" }} />
                                         </div>
