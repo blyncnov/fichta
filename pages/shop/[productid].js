@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 
@@ -53,7 +53,7 @@ const { productid } = router.query
               <FaEthereum/> 0.046
             </HeadingOne>
             <br/>
-            <Button onClick={dispatch(AddToCart())}>Add to Cart</Button>
+            <Button onClick={ dispatch(AddToCart())}>Add to Cart</Button>
           </SingleProductDivider>
         </SingleProductContainer>
         </Constraints>
